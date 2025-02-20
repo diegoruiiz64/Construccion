@@ -9,6 +9,7 @@ const env = process.env.NODE_ENV || 'development';
 const config = require(__dirname + '/../config/config.json')[env];
 const db = {};
 
+// Initialize Sequelize based on environment configuration
 let sequelize;
 if (config.use_env_variable) {
   sequelize = new Sequelize(process.env[config.use_env_variable], config);
@@ -16,6 +17,7 @@ if (config.use_env_variable) {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
 
+// Read all files in the current directory (models)
 fs
   .readdirSync(__dirname)
   .filter(file => {
@@ -31,6 +33,8 @@ fs
     db[model.name] = model;
   });
 
+
+  // Set up associations if they exist
 Object.keys(db).forEach(modelName => {
   if (db[modelName].associate) {
     db[modelName].associate(db);

@@ -7,7 +7,6 @@
     "host": "hopper.proxy.rlwy.net",
     "dialect": "mysql",
     "port": "46146"
-    
   },
   "test": {
     "username": "root",
@@ -17,7 +16,6 @@
     "dialect": "mysql",
     "port": "46146"
   },
-  
   "production": {
     "username": "root",
     "password": "sQpgwFzrNMzjJlcafyihVFdWONLeQzaN",
