@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-let userController = require("../controllers/userController");
+const userController = require("../controllers/userController");
 
 // Define routes and attach corresponding controller methods
 router.get   ("/user", userController.getUser); // Fixed to match the controller method name

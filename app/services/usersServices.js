@@ -1,4 +1,9 @@
-const { User } = require('../models');
+//const { User } = require('../models');
+//const { User } = require('../models');
+
+console.log(__dirname); // Añade esto para verificar la ruta absoluta
+const { User } = require('../../models'); // Ajusta la ruta si es necesario
+
 
 class UsersServices {
 

@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 const usersRouter = require("./app/routers/userRouter");
 
+const apiKey = process.env.API_KEY; // Acceder a la variable de entorno API_KEY
 
 app.use(express.json()); // Middleware to parse JSON bodies
 
