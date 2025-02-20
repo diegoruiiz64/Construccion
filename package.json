@@ -3,10 +3,11 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-          "start": "nodemon server.js",
-          "test": "echo \"Error: no test specified\" && exit 1",
-          "migrate": "sequelize db:migrate",
-          "seed": "sequelize db:seed:all"
+        "start": "nodemon server.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "migrate": "sequelize db:migrate",
+        "seed": "sequelize db:seed:all"
+       
     },
     "keywords": [
         "express",
@@ -25,7 +26,7 @@
         "sequelize-cli": "^6.6.2"
     },
     "engines": {
-         "node": ">=14.0.0",
-         "npm": ">=6.0.0"
- }
+        "node": ">=14.0.0",
+        "npm": ">=6.0.0"
+    }
 }
