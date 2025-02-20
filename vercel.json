@@ -14,7 +14,7 @@
     ],
     "env": {
       "NODE_ENV": "production",
-      "API_KEY": "@mi_variable_secreta"
+      "API_KEY": "tu_api_key_secreta"
     }
   }
   
