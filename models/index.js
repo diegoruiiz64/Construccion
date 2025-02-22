@@ -18,7 +18,7 @@ if (config.use_env_variable) {
 }
 
 // Read all files in the current directory (models)
-fs
+  fs
   .readdirSync(__dirname)
   .filter(file => {
     return (
