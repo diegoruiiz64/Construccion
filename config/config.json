@@ -1,11 +1,13 @@
 
+
+
 {
   "development": {
     "username": "root",
     "password": "sQpgwFzrNMzjJlcafyihVFdWONLeQzaN",
     "database": "railway",
     "host": "hopper.proxy.rlwy.net",
-    "dialect": "mysql",
+    "dialectModule": "mysql2",
     "port": "46146"
   },
   "test": {
@@ -13,7 +15,7 @@
     "password": "sQpgwFzrNMzjJlcafyihVFdWONLeQzaN",
     "database": "railway",
     "host": "hopper.proxy.rlwy.net",
-    "dialect": "mysql",
+    "dialectModule": "mysql2",
     "port": "46146"
   },
   "production": {
@@ -21,7 +23,7 @@
     "password": "sQpgwFzrNMzjJlcafyihVFdWONLeQzaN",
     "database": "railway",
     "host": "hopper.proxy.rlwy.net",
-    "dialect": "mysql",
+    "dialectModule": "mysql2",
     "port": "46146"
   }
 }
