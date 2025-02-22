@@ -9,10 +9,22 @@ const env = process.env.NODE_ENV || 'development';
 const config = require(__dirname + '/../config/config.json')[env];
 const db = {};
 
+/*
+
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
+    dialect: 'mysql',
+    dialectModule: require('mysql2')
+  })
+*/
+
 // Initialize Sequelize based on environment configuration
 let sequelize;
 if (config.use_env_variable) {
-  sequelize = new Sequelize(process.env[config.use_env_variable], config);
+  //sequelize = new Sequelize(process.env[config.use_env_variable], config);
+const sequelize = new Sequelize(process.env.DATABASE_URL, {
+  dialect: 'mysql',
+  dialectModule: require('mysql2')
+})
 } else {
   sequelize = new Sequelize(config.database, config.username, config.password, config);
 }

@@ -1,6 +1,6 @@
 
 const UsersService = require('../services/usersServices');
-
+//const bcrypt = require('bcrypt');
 class userController {
   // Fetches all users from the service
   static async getUser(req, res) {
